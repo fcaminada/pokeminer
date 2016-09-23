@@ -7,7 +7,7 @@ import requests
 from flask import Flask, request, render_template
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
-import config
+from . import config
 import db
 import utils
 from names import POKEMON_NAMES
@@ -257,7 +257,7 @@ def report_time_based_heatmap():
     session = db.Session()
     pokemon_id = request.args.get('id')
     time_data = db.get_spawns_per_minute(session, pokemon_id)
-    
+
     session.close()
 
     return json.dumps(time_data)
