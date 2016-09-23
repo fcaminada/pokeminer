@@ -7,7 +7,7 @@ import requests
 from flask import Flask, request, render_template
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
-from . import config
+import config
 import db
 import utils
 from names import POKEMON_NAMES

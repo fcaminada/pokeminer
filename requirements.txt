@@ -6,5 +6,6 @@ flask==0.11.1
 gpsoauth==0.3.0
 coveralls==1.1
 werkzeug==0.11.10
+-e git+https://github.com/tejado/pgoapi.git@0811db23d639039f968a82e06c7aa15a0a5016b6#egg=pgoapi
 sqlalchemy==1.0.14
 enum34==1.1.6
