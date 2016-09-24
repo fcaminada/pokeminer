@@ -1,9 +1,6 @@
 *.pyc
 .idea
-config.py
 db.sqlite
 *.log
-templates/footer.html
-*.so
 *.dll
 *.dylib
